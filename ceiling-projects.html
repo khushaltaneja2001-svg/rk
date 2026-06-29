@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ceiling Projects — RK Interior | Gypsum, Fall, Grid, PVC, Partition in Punjab</title>
+  <meta name="description" content="Browse RK Interior's ceiling project gallery. View completed Gypsum Ceiling, Fall Ceiling, Grid Ceiling, PVC Panel, and Partition projects across Punjab.">
+  <meta name="keywords" content="ceiling project gallery Punjab, gypsum ceiling photos, fall ceiling design, grid ceiling installation, PVC panel ceiling, partition work photos">
+  <link rel="canonical" href="https://rkinterior.in/ceiling-projects.html">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/components.js" defer></script>
+  <script src="js/main.js" defer></script>
+  <script>
+    // Read cat param on load
+    window.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const cat = params.get('cat');
+      if (cat) {
+        const btn = document.querySelector(`.cat-btn[data-cat="${cat}"]`);
+        if (btn) { setTimeout(() => btn.click(), 100); }
+      }
+    });
+  </script>
+</head>
+<body>
+
+<div id="nav-placeholder"></div>
+<div id="floating-placeholder"></div>
+
+<!-- PAGE HERO -->
+<div class="page-hero">
+  <span class="eyebrow">Our Portfolio</span>
+  <h1>Ceiling Projects</h1>
+  <p>Browse our completed projects across Punjab — click a category to view specific ceiling type photos.</p>
+</div>
+
+<!-- CATEGORY FILTER -->
+<div class="category-tabs" style="padding-top:40px;">
+  <button class="cat-btn active" data-cat="gypsum">
+    <span>🏛️</span> Gypsum Ceiling
+  </button>
+  <button class="cat-btn" data-cat="partition">
+    <span>🧱</span> Partition
+  </button>
+  <button class="cat-btn" data-cat="grid">
+    <span>⊞</span> Grid Ceiling
+  </button>
+  <button class="cat-btn" data-cat="fall">
+    <span>⬇️</span> Fall Ceiling
+  </button>
+  <button class="cat-btn" data-cat="pvc">
+    <span>🔲</span> PVC Panel
+  </button>
+</div>
+
+<!-- PROJECT GALLERY (JS rendered) -->
+<div id="projectGallery" class="project-gallery"></div>
+
+<!-- INFO STRIP -->
+<div style="background:var(--cream); padding:60px 8%; text-align:center;">
+  <span class="eyebrow" style="display:block; margin-bottom:12px;">Expert Craftsmanship</span>
+  <h2 style="color:var(--forest); margin-bottom:14px;">Can't Find What You're Looking For?</h2>
+  <p style="color:var(--text-lt); margin-bottom:28px; max-width:480px; margin-left:auto; margin-right:auto;">We handle custom ceiling designs too. Share your vision and our team will bring it to life.</p>
+  <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
+    <a href="contact.html" class="btn btn-primary">Request Custom Design</a>
+    <a href="tel:+918010561544" class="btn btn-outline">📞 8010561544</a>
+  </div>
+</div>
+
+<!-- TESTIMONIALS MINI -->
+<section class="section testimonials-section">
+  <div class="section-header centered">
+    <span class="eyebrow">Client Reviews</span>
+    <h2>Happy Clients</h2>
+  </div>
+  <div class="testimonial-slider">
+    <div class="testimonials-viewport">
+      <div id="testimonialTrack" class="testimonial-track"></div>
+    </div>
+    <div class="slider-nav">
+      <button class="slider-arrow" id="prevSlide">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <div id="sliderDots"></div>
+      <button class="slider-arrow" id="nextSlide">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+    </div>
+  </div>
+</section>
+
+<div id="footer-placeholder"></div>
+</body>
+</html>
